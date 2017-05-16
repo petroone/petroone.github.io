@@ -267,9 +267,14 @@ input[type="submit"],input[type="reset"],.w3ls_footer_grid_leftl,.w3ls_footer_gr
 	-o-background-size:cover;
 	-ms-background-size:cover;
 	min-height:400px;
+  padding-bottom: 40px;
 }
 .agileinfo_about_bottom_left img {
     margin: 0 auto;
+}
+.agileinfo_about_bottom_right img{
+  margin-bottom: 50px;
+  max-height: 100px;
 }
 .agileinfo_about_bottom_right h2{
 	font-size: 2em;
