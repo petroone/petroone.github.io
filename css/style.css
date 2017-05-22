@@ -599,7 +599,7 @@ input[type="submit"],input[type="reset"],.w3ls_footer_grid_leftl,.w3ls_footer_gr
     color: #212121;
     font-size: 14px;
     border: none;
-    border-bottom:2px solid #f2f2f2;
+    border:2px solid #d9d9d9;
     background: none;
     width: 97.3%;
     margin:0 0 3em 1.1em;
@@ -658,6 +658,7 @@ input[type="submit"],input[type="reset"],.w3ls_footer_grid_leftl,.w3ls_footer_gr
 }
 
 .input__label {
+  border: 2px solid #d9d9d9;
 	display: inline-block;
     padding: 0 1em;
     width: 40%;
@@ -720,7 +721,6 @@ input[type="submit"],input[type="reset"],.w3ls_footer_grid_leftl,.w3ls_footer_gr
 }
 
 .input__label--jiro::before {
-	border-top:2px solid #f2f2f2;
 	-webkit-transform: translate3d(0, 100%, 0) translate3d(0, -2px, 0);
 	transform: translate3d(0, 100%, 0) translate3d(0, -2px, 0);
 	-webkit-transition-delay: 0.3s;
