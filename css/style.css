@@ -308,6 +308,17 @@ input[type="submit"],input[type="reset"],.w3ls_footer_grid_leftl,.w3ls_footer_gr
 }
 /*-- //about-bottom --*/
 /*-- services --*/
+.services .descarga {
+  text-align: center;
+}
+.btn.btn-default.btn-descarga {
+  color: #F4B91A !important;
+  border: 2px solid black;
+  border-radius: 0;
+  padding: 15px;
+  font-weight: 700;
+  font-size: 1.1em;
+}
 .w3l_head1,.w3ls_head_para1{
 	text-align:center;
 }
