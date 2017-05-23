@@ -222,6 +222,9 @@ input[type="submit"],input[type="reset"],.w3ls_footer_grid_leftl,.w3ls_footer_gr
 	bottom:0%;
 	right:35%;
 }
+.w3ls_head_image{
+  margin-top: 60px;
+}
 .w3ls_head_para{
 	color:#F4B91A;
   font-weight: 600;
@@ -229,7 +232,7 @@ input[type="submit"],input[type="reset"],.w3ls_footer_grid_leftl,.w3ls_footer_gr
 	letter-spacing:8px;
 }
 .agileits_about_left{
-	border-right:1px solid #212121;
+	/*border-right:1px solid #212121;*/
 }
 
 .agileits_about_right p{
@@ -1224,6 +1227,10 @@ rid_left:hover .w3ls_footer_grid_leftr h4{
 	.header {
 		padding: 0.6em 1em;
 	}
+  .w3ls_head_image{
+    height: 260px;
+    margin-top: 30px;
+  }
 	.banner p {
 		font-size: 1.67em;
 	}
