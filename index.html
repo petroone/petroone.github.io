@@ -19,6 +19,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   <!-- //for-mobile-apps -->
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
   <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <!-- js -->
+  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+  <!-- //js -->
   <!-- gallery -->
   <link rel="stylesheet" href="css/lightGallery.css" type="text/css" media="all" />
   <!-- //gallery -->
@@ -183,7 +186,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<h3 class="w3l_head w3l_head1">Servicios</h3>
 			<p class="w3ls_head_para w3ls_head_para1">lo que hacemos</p>
 			<div class="w3_agileits_services_grids">
-				<div class="col-md-4 w3_agileits_services_grid">
+
+				<div id="servicio-1" class="col-md-4 w3_agileits_services_grid">
 					<div class="w3_agileits_services_grid_agile">
 						<div class="w3_agileits_services_grid_1">
 							<i class="fa fa-gears" aria-hidden="true"></i>
@@ -192,7 +196,31 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<p>CRT y Convencional</p>
 					</div>
 				</div>
-				<div class="col-md-4 w3_agileits_services_grid">
+
+        <div class="modal fade" id="modal-servicio-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Corridas de casing</h4>
+              </div>
+              <div class="modal-body">
+                <img class="img-responsive center-block" src="images/servicio-corridas-de-casing.png" id="imagepreview" style="width: 400px; height: 264px;" >
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script type="text/javascript" charset="utf-8">
+          $("#servicio-1").on("click", function() {
+            $('#modal-servicio-1').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+          });
+        </script>
+
+				<div id="servicio-2" class="col-md-4 w3_agileits_services_grid">
 					<div class="w3_agileits_services_grid_agile">
 						<div class="w3_agileits_services_grid_1">
 							<i class="fa fa-tint" aria-hidden="true"></i>
@@ -201,7 +229,31 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<p>Corridas de liner, tubing, varilla de producción</p>
 					</div>
 				</div>
-				<div class="col-md-4 w3_agileits_services_grid">
+
+        <div class="modal fade" id="modal-servicio-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Completamiento de pozos</h4>
+              </div>
+              <div class="modal-body">
+                <img class="img-responsive center-block" src="images/servicio-completamiento-pozos.png" id="imagepreview" style="width: 400px; height: 264px;" >
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script type="text/javascript" charset="utf-8">
+          $("#servicio-2").on("click", function() {
+            $('#modal-servicio-2').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+          });
+        </script>
+
+				<div class="col-md-4 w3_agileits_services_grid" id="servicio-3">
 					<div class="w3_agileits_services_grid_agile">
 						<div class="w3_agileits_services_grid_1">
 							<i class="fa fa-certificate" aria-hidden="true"></i>
@@ -210,7 +262,31 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<p>Casing, Liner, Tubing, Varilla de producción, Herramientas de perforación, Equipos de perforación y producción, Maquinaria pesada, grúas, montacargas, man lift, King pin y quinta ruedas</p>
 					</div>
 				</div>
-				<div class="col-md-4 w3_agileits_services_grid">
+
+        <div class="modal fade" id="modal-servicio-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Inspección y expedición de certificados</h4>
+              </div>
+              <div class="modal-body">
+                <img class="img-responsive center-block" src="images/servicio-inspeccion.png" id="imagepreview" style="width: 400px; height: 264px;" >
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script type="text/javascript" charset="utf-8">
+          $("#servicio-3").on("click", function() {
+            $('#modal-servicio-3').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+          });
+        </script>
+
+				<div class="col-md-4 w3_agileits_services_grid" id="servicio-4">
 					<div class="w3_agileits_services_grid_agile">
 						<div class="w3_agileits_services_grid_1">
 							<i class="fa fa-wrench" aria-hidden="true"></i>
@@ -219,7 +295,31 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<p>Puestas en pozo, asesoría, evaluación, reparación y venta</p>
 					</div>
 				</div>
-				<div class="col-md-4 w3_agileits_services_grid">
+
+        <div class="modal fade" id="modal-servicio-4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Alquiler de equipos para la industria petrolera y minera</h4>
+              </div>
+              <div class="modal-body">
+                <img class="img-responsive center-block" src="images/servicio-alquiler.png" id="imagepreview" style="width: 400px; height: 264px;" >
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script type="text/javascript" charset="utf-8">
+          $("#servicio-4").on("click", function() {
+            $('#modal-servicio-4').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+          });
+        </script>
+
+				<div class="col-md-4 w3_agileits_services_grid" id="servicio-5">
 					<div class="w3_agileits_services_grid_agile">
 						<div class="w3_agileits_services_grid_1">
 							<i class="fa fa-bolt" aria-hidden="true"></i>
@@ -228,7 +328,31 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<p></p>
 					</div>
 				</div>
-				<div class="col-md-4 w3_agileits_services_grid">
+
+        <div class="modal fade" id="modal-servicio-5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Soldadura</h4>
+              </div>
+              <div class="modal-body">
+                <img class="img-responsive center-block" src="images/servicio-soldadura.png" id="imagepreview" style="width: 400px; height: 264px;" >
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script type="text/javascript" charset="utf-8">
+          $("#servicio-5").on("click", function() {
+            $('#modal-servicio-5').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+          });
+        </script>
+
+				<div class="col-md-4 w3_agileits_services_grid" id="servicio-6">
 					<div class="w3_agileits_services_grid_agile">
 						<div class="w3_agileits_services_grid_1">
 							<i class="fa fa-check-square-o" aria-hidden="true"></i>
@@ -237,6 +361,30 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<p>Para todos los campos petroleros y mineros a nivel nacional</p>
 					</div>
 				</div>
+
+        <div class="modal fade" id="modal-servicio-6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Logística</h4>
+              </div>
+              <div class="modal-body">
+                <img class="img-responsive center-block" src="images/servicio-logistica.png" id="imagepreview" >
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script type="text/javascript" charset="utf-8">
+          $("#servicio-6").on("click", function() {
+            $('#modal-servicio-6').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+          });
+        </script>
+
 				<div class="clearfix"> </div>
 			</div>
       <br />
@@ -287,77 +435,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 	</div>
 <!-- //services-bottom -->
-<!-- team -->
-	<!--<div class="team" id="team">-->
-		<!--<div class="container">-->
-			<!--<h3 class="w3l_head w3l_head1 w3l_head1_w3layouts">Meet Our Team</h3>-->
-			<!--<p class="w3ls_head_para w3ls_head_para1">we are the best team</p>-->
-			<!--<div class="w3_team_grids">-->
-				<!--<div class="col-md-3 w3_team_grid">-->
-					<!--<div class="w3_team_grid1">-->
-						<!--<img src="images/4.jpg" alt=" " class="img-responsive" />-->
-						<!--<div class="w3_team_grid1_pos">-->
-							<!--<ul class="w3ls_social">-->
-								<!--<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>-->
-								<!--<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>-->
-								<!--<li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>-->
-								<!--<li><a href="#" class="w3_agile_vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>-->
-							<!--</ul>-->
-						<!--</div>-->
-					<!--</div>-->
-					<!--<h4>John Frick</h4>-->
-					<!--<p>Supervisor</p>-->
-				<!--</div>-->
-				<!--<div class="col-md-3 w3_team_grid">-->
-					<!--<div class="w3_team_grid1">-->
-						<!--<img src="images/7.jpg" alt=" " class="img-responsive" />-->
-						<!--<div class="w3_team_grid1_pos">-->
-							<!--<ul class="w3ls_social">-->
-								<!--<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>-->
-								<!--<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>-->
-								<!--<li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>-->
-								<!--<li><a href="#" class="w3_agile_vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>-->
-							<!--</ul>-->
-						<!--</div>-->
-					<!--</div>-->
-					<!--<h4>Laura Lii</h4>-->
-					<!--<p>Worker</p>-->
-				<!--</div>-->
-				<!--<div class="col-md-3 w3_team_grid">-->
-					<!--<div class="w3_team_grid1">-->
-						<!--<img src="images/6.jpg" alt=" " class="img-responsive" />-->
-						<!--<div class="w3_team_grid1_pos">-->
-							<!--<ul class="w3ls_social">-->
-								<!--<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>-->
-								<!--<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>-->
-								<!--<li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>-->
-								<!--<li><a href="#" class="w3_agile_vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>-->
-							<!--</ul>-->
-						<!--</div>-->
-					<!--</div>-->
-					<!--<h4>Rosy Doe</h4>-->
-					<!--<p>Supervisor</p>-->
-				<!--</div>-->
-				<!--<div class="col-md-3 w3_team_grid">-->
-					<!--<div class="w3_team_grid1">-->
-						<!--<img src="images/5.jpg" alt=" " class="img-responsive" />-->
-						<!--<div class="w3_team_grid1_pos">-->
-							<!--<ul class="w3ls_social">-->
-								<!--<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>-->
-								<!--<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>-->
-								<!--<li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>-->
-								<!--<li><a href="#" class="w3_agile_vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>-->
-							<!--</ul>-->
-						<!--</div>-->
-					<!--</div>-->
-					<!--<h4>Kate Winslet</h4>-->
-					<!--<p>Supervisor</p>-->
-				<!--</div>-->
-				<!--<div class="clearfix"> </div>-->
-			<!--</div>-->
-		<!--</div>-->
-	<!--</div>-->
-<!-- //team -->
 <!-- gallery -->
 	<div class="gallery team-bottom" id="work">
 		<div class="container">
@@ -365,28 +442,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<p class="w3ls_head_para w3ls_head_para1">Nuestros casos de éxito</p>
 			<div class="w3layouts_gallery_grids">
 				<ul class="w3l_gallery_grid" id="lightGallery">
-					<li data-title="Adamant" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/caso-01.jpg" data-responsive-src="images/caso-01.jpg"> 
-						<div class="w3layouts_gallery_grid1 box">
-							<a href="#">
-								<img src="images/caso-01.jpg" alt=" " class="img-responsive" />
-								<div class="overbox">
-									<h4 class="title overtext"> Petro One </h4>
-									<p class="tagline overtext"> Fusce venenatis sem nec justo dapibus finibus. </p>
-								</div>
-							</a>
-						</div>
-					</li>
-					<li data-title="Adamant" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/caso-02.jpg" data-responsive-src="images/caso-02.jpg"> 
-						<div class="w3layouts_gallery_grid1 box">
-							<a href="#">
-								<img src="images/caso-02.jpg" alt=" " class="img-responsive" />
-								<div class="overbox">
-									<h4 class="title overtext"> Petro One </h4>
-									<p class="tagline overtext"> Fusce venenatis sem nec justo dapibus finibus. </p>
-								</div>
-							</a>
-						</div>
-					</li>
+					<!--<li data-title="Adamant" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/caso-01.jpg" data-responsive-src="images/caso-01.jpg"> -->
+						<!--<div class="w3layouts_gallery_grid1 box">-->
+							<!--<a href="#">-->
+								<!--<img src="images/caso-01.jpg" alt=" " class="img-responsive" />-->
+								<!--<div class="overbox">-->
+									<!--<h4 class="title overtext"> Petro One </h4>-->
+									<!--<p class="tagline overtext"> Fusce venenatis sem nec justo dapibus finibus. </p>-->
+								<!--</div>-->
+							<!--</a>-->
+						<!--</div>-->
+					<!--</li>-->
+					<!--<li data-title="Adamant" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/caso-02.jpg" data-responsive-src="images/caso-02.jpg"> -->
+						<!--<div class="w3layouts_gallery_grid1 box">-->
+							<!--<a href="#">-->
+								<!--<img src="images/caso-02.jpg" alt=" " class="img-responsive" />-->
+								<!--<div class="overbox">-->
+									<!--<h4 class="title overtext"> Petro One </h4>-->
+									<!--<p class="tagline overtext"> Fusce venenatis sem nec justo dapibus finibus. </p>-->
+								<!--</div>-->
+							<!--</a>-->
+						<!--</div>-->
+					<!--</li>-->
 					<li data-title="Adamant" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/caso-03.jpg" data-responsive-src="images/caso-03.jpg"> 
 						<div class="w3layouts_gallery_grid1 box">
 							<a href="#">
@@ -409,17 +486,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							</a>
 						</div>
 					</li>
-					<li data-title="Adamant" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/caso-05.jpg" data-responsive-src="images/caso-05.jpg"> 
-						<div class="w3layouts_gallery_grid1 box">
-							<a href="#">
-								<img src="images/caso-05.jpg" alt=" " class="img-responsive" />
-								<div class="overbox">
-									<h4 class="title overtext"> Petro One </h4>
-									<p class="tagline overtext"> Fusce venenatis sem nec justo dapibus finibus. </p>
-								</div>
-							</a>
-						</div>
-					</li>
+					<!--<li data-title="Adamant" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/caso-05.jpg" data-responsive-src="images/caso-05.jpg"> -->
+						<!--<div class="w3layouts_gallery_grid1 box">-->
+							<!--<a href="#">-->
+								<!--<img src="images/caso-05.jpg" alt=" " class="img-responsive" />-->
+								<!--<div class="overbox">-->
+									<!--<h4 class="title overtext"> Petro One </h4>-->
+									<!--<p class="tagline overtext"> Fusce venenatis sem nec justo dapibus finibus. </p>-->
+								<!--</div>-->
+							<!--</a>-->
+						<!--</div>-->
+					<!--</li>-->
 					<li data-title="Adamant" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/caso-06.jpg" data-responsive-src="images/caso-06.jpg"> 
 						<div class="w3layouts_gallery_grid1 box">
 							<a href="#">
@@ -651,9 +728,6 @@ $('.map-container').click(function(){
 		</div>
 	</div>
 <!-- //footer -->
-  <!-- js -->
-  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-  <!-- //js -->
 <!-- for bootstrap working -->
 	<script src="js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
