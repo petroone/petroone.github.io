@@ -657,26 +657,31 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<h3 class="w3l_head w3l_head1">Contáctanos</h3>
 			<p class="w3ls_head_para w3ls_head_para1">envíanos un mensaje</p>
 			<div class="w3_mail_grids">
-				<form action="#" method="post">
+				<form action="https://formspree.io/info@petro-one.co" method="POST">
 					<span class="input input--jiro">
-						<input class="input__field input__field--jiro" type="text" id="input-10" name="Name" placeholder="Tu Nombre" required=""/>
+						<input class="input__field input__field--jiro" type="text" id="input-10" name="nombre" placeholder="Tu Nombre" required=""/>
 						<label class="input__label input__label--jiro" for="input-10">
 							<span class="input__label-content input__label-content--jiro">Tu Nombre</span>
 						</label>
 					</span>
 					<span class="input input--jiro">
-						<input class="input__field input__field--jiro" type="email" id="input-11" name="Email" placeholder="Tu Correo" required=""/>
+						<input class="input__field input__field--jiro" type="email" id="input-11" name="_replyto" placeholder="Tu Correo" required=""/>
 						<label class="input__label input__label--jiro" for="input-11">
 							<span class="input__label-content input__label-content--jiro">Tu Correo</span>
 						</label>
 					</span>
 					<span class="input input--jiro">
-						<input class="input__field input__field--jiro" type="text" id="input-12" name="Teléfono" placeholder="Teléfono" required=""/>
+						<input class="input__field input__field--jiro" type="text" id="input-12" name="telefono" placeholder="Teléfono" required=""/>
 						<label class="input__label input__label--jiro" for="input-12">
 							<span class="input__label-content input__label-content--jiro">Teléfono</span>
 						</label>
 					</span>
-					<textarea name="Message" placeholder="Mensaje..." required=""></textarea>
+					<textarea name="mensaje" placeholder="Mensaje..." required=""></textarea>
+
+          <input type="hidden" name="_subject" value="[sitio web Petro One]" />
+          <input type="text" name="_gotcha" style="display:none" />
+          <input type="hidden" name="_next" value="http://petroone.github.io/gracias.html" />
+
 					<input type="submit" value="Enviar">
 				</form>
 			</div>

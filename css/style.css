@@ -1693,3 +1693,17 @@ rid_left:hover .w3ls_footer_grid_leftr h4{
 .map-container iframe.clicked{
   pointer-events: auto;
 }
+
+.gracias {
+  text-align: center;
+  padding: 40px;
+}
+
+.gracias h1 {
+  margin: 30px;
+}
+
+.gracias p.texto {
+  margin: 30px;
+  font-size: 1.3em;
+}
