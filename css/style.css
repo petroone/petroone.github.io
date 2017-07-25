@@ -482,6 +482,10 @@ input[type="submit"],input[type="reset"],.w3ls_footer_grid_leftl,.w3ls_footer_gr
     width: 32.33%;
     padding: 1%;
 }
+.w3layouts_gallery_grid1.box,
+.w3layouts_gallery_grid1.box video{
+  border-radius: 10px;
+}
 .box {
     position: relative;
     overflow: hidden;
@@ -498,6 +502,7 @@ input[type="submit"],input[type="reset"],.w3ls_footer_grid_leftl,.w3ls_footer_gr
 }
 
 .box .overbox {
+  border-radius: 10px;
 	background-color: hsla(0, 0%, 11%, 0.6);
     position: absolute;
     top: 0;
