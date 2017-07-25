@@ -5,9 +5,9 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 html, body{
-    font-size: 100%;
+  font-size: 100%;
 	font-family: 'Open Sans', sans-serif;
-	background:#ffffff;
+	background: #F9FAF9;
 	margin: 0;
 }
 p,ul li,ol li{
